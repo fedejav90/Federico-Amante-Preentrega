@@ -56,7 +56,7 @@ def test_boton_opciones(driver):
     # Hacer clic en el menú hamburguesa
     driver.find_element(By.ID, "react-burger-menu-btn").click()
 
-    # Esperar a que el elemento del menú sea visible y usar CSS Selector para evitar clases compuestas
+    # Espero a que el menú sea visible
     opcion_all_items = wait.until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".bm-item.menu-item"))
     )
